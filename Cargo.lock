@@ -3095,7 +3095,7 @@ checksum = "7b2093cf4c8eb1e67749a6762251bc9cd836b6fc171623bd0a9d324d37af2417"
 [[package]]
 name = "tetron-proto"
 version = "0.15.0"
-source = "git+https://github.com/ErikAllanKincaid/tetron#e2ddbed60920cef54b08bf72b8973348169bb2df"
+source = "git+https://github.com/tetronos/tetron#e2ddbed60920cef54b08bf72b8973348169bb2df"
 dependencies = [
  "anyhow",
  "blake3",

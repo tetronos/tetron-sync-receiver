@@ -1,6 +1,6 @@
 # tetron-sync-receiver
 
-A small program that turns a home computer into a photo backup destination for [tetron-mobile-sync](https://github.com/ErikAllanKincaid/tetron-mobile-sync), an Android app that backs up your phone's camera roll to a computer you own over the [tetron](https://github.com/ErikAllanKincaid/tetron) mesh network. This is the piece that runs on the receiving computer.
+A small program that turns a home computer into a photo backup destination for [tetron-mobile-sync](https://github.com/tetronos/tetron-mobile-sync), an Android app that backs up your phone's camera roll to a computer you own over the [tetron](https://github.com/tetronos/tetron) mesh network. This is the piece that runs on the receiving computer.
 
 It runs in the background, accepts incoming transfers only from devices you've explicitly allowed, and writes everything under one backup folder you choose. Nothing is reachable from the phone until you pick that folder and say who is allowed to connect.
 
@@ -21,13 +21,13 @@ Use the tetron install script.
 Do not accept defaults, sync reciever will be a choice. 
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ErikAllanKincaid/tetron/main/contrib/install-tetron-suite.sh | bash
+curl -fsSL https://raw.githubusercontent.com/tetronos/tetron/main/contrib/install-tetron-suite.sh | bash
 ```
 
 Or build and install the binary:
 
 ```
-git clone https://github.com/ErikAllanKincaid/tetron-sync-receiver
+git clone https://github.com/tetronos/tetron-sync-receiver
 cd tetron-sync-receiver
 cargo build --release
 sudo install -m 0755 target/release/tetron-sync-receiver /usr/local/bin/tetron-sync-receiver
@@ -90,7 +90,7 @@ Add `--json` right after `tetron-sync-receiver` on any command for machine-reada
 
 ## Using the web dashboard (tetron-webui)
 
-If you also run [`tetron-webui`](https://github.com/ErikAllanKincaid/tetron-webui) (a browser dashboard for the mesh network), you can do all of the above by clicking instead of typing:
+If you also run [`tetron-webui`](https://github.com/tetronos/tetron-webui) (a browser dashboard for the mesh network), you can do all of the above by clicking instead of typing:
 
 1. Open the webui's Add-ons page. You'll see a **Sync Receiver** entry.
 2. If it isn't installed yet, the row shows the exact command to run in a terminal (the dashboard can't install software on your computer for you -- you run that one command once).

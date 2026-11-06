@@ -5,7 +5,7 @@ edition = "2024"
 rust-version = "1.91"
 license = "MPL-2.0"
 description = "Headless home-side rsync receiver for tetron-mobile-sync, managed over the tetron mesh"
-repository = "https://github.com/ErikAllanKincaid/tetron-sync-receiver"
+repository = "https://github.com/tetronos/tetron-sync-receiver"
 
 [[bin]]
 name = "tetron-sync-receiver"
@@ -17,7 +17,7 @@ path = "src/main.rs"
 # compatibility risk is which *binaries* are running together, and
 # tetron-proto's wire types already use #[serde(default)] consistently for
 # exactly that reason.
-tetron-proto = { git = "https://github.com/ErikAllanKincaid/tetron" }
+tetron-proto = { git = "https://github.com/tetronos/tetron" }
 tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
 clap = { version = "4", features = ["derive", "env"] }
 dirs = "6.0.0"
