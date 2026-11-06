@@ -21,7 +21,7 @@ Use the tetron install script.
 Do not accept defaults, sync reciever will be a choice. 
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/tetronos/tetron/main/contrib/install-tetron-suite.sh | bash
+curl -fsSL https://tetronos.github.io/tetron/install.sh | bash
 ```
 
 Or build and install the binary:
